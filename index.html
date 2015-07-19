@@ -13,9 +13,42 @@
           center: { lat: 52.3702157, lng: 4.895167900000001},
           zoom: 15
         };
+
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
-      }
+
+        var locations = {
+          lunch: [
+            {
+              title: "Hannekes Boom",
+              position: new google.maps.LatLng(52.3762837,4.9115914),
+            },
+            {
+              title: "Blue 360",
+              position: new google.maps.LatLng(52.3674258,4.8923548),
+            }
+          ]
+        };
+
+        drawMarkers(map, locations);
+      };
+
+      var drawMarkers = function(map, locations) {
+        for (var categoryName in locations) {
+          var category = locations[categoryName];
+          if (locations.hasOwnProperty(categoryName)) {
+            for (var i = 0; i < category.length; i++) {
+              var location = category[i];
+              location.marker = new google.maps.Marker({
+                position: location.position,
+                map: map,
+                title: location.title
+              });
+            } 
+          }
+        }
+      };
+
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </head>
