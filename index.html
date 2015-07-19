@@ -18,134 +18,152 @@
             mapOptions);
 
         var locations = {
-          lunch: [
-            {
-              title: "Hannekes Boom",
-              position: new google.maps.LatLng(52.3762837,4.9115914)
-            },
-            {
-              title: "Blue 360",
-              position: new google.maps.LatLng(52.3674258,4.8923548)
-            },
-            {
-              title: "Gartine",
-              position: new google.maps.LatLng(52.369185,4.8915167)
-            },
-            {
-              title: "Toastable",
-              position: new google.maps.LatLng(52.3673553,4.8903123)
-            },
-            {
-              title: "Single 404",
-              position: new google.maps.LatLng(52.368915,4.8874492)
-            },
-            {
-              title: "Greenwoods Tea Room",
-              position: new google.maps.LatLng(52.3757997,4.8912983)
-            },
-            {
-              title: "PIQNIQ",
-              position: new google.maps.LatLng(52.380322,4.886121)
-            },
-            {
-              title: "Omelegg",
-              position: new google.maps.LatLng(52.3517203,4.8915746)
-            },
-            {
-              title: "Bar Bukowski",
-              position: new google.maps.LatLng(52.3580076,4.9176572)
-            }
-          ],
-          breweries: [
-            {
-              title: "Brouwerij 't IJ",
-              position: new google.maps.LatLng(52.3666947,4.9263624)
-            },
-            {
-              title: "Brouwerij de Prael",
-              position: new google.maps.LatLng(52.3756613,4.899332)
-            },
-            {
-              title: "Oedipus Brewing",
-              position: new google.maps.LatLng(52.3808556,4.889881)
-            },
-          ],
-          bars: [
-            {
-              title: "Bierfabriek",
-              position: new google.maps.LatLng(52.3705196,4.8931189)
-            },
-            {
-              title: "In De Wildeman",
-              position: new google.maps.LatLng(52.3761526,4.895069)
-            },
-            {
-              title: "Delirium Café",
-              position: new google.maps.LatLng(52.3775658,4.9126965)
-            },
-            {
-              title: "Beertemple",
-              position: new google.maps.LatLng(52.3719824,4.8903467)
-            },
-            {
-              title: "Proeflokaal Arendsnest",
-              position: new google.maps.LatLng(52.3767249,4.8892992)
-            },
-            {
-              title: "Craft & Draft",
-              position: new google.maps.LatLng(52.3607929,4.8684218)
-            },
-          ],
-          spirits: [
-            {
-              title: "Hiding in Plain Sight",
-              position: new google.maps.LatLng(52.3717482,4.9076649)
-            },
-            {
-              title: "La Cage Amsterdam",
-              position: new google.maps.LatLng(52.3662661,4.8914706)
-            },
-            {
-              title: "Whiskycafe L&B",
-              position: new google.maps.LatLng(52.362795,4.8852374)
-            },
+          lunch: {
+            places: [
               {
-              title: "Wynand Fockink",
-              position: new google.maps.LatLng(52.3723226,4.895356)
-            }
-          ],
-          hotel: [
-            {
-              title: "Hotel Arena",
-              position: new google.maps.LatLng(52.3612324,4.9163295)
-            }
-          ],
-          dinner: [
-            {
-              title: "Bar Brouw",
-              position: new google.maps.LatLng(52.3573731,4.9183425)
-            },
-            {
-              title: "Hoppy Days",
-              position: new google.maps.LatLng(52.3774389,4.8936099)
-            },
-            {
-              title: "Lombardo's",
-              position: new google.maps.LatLng(52.3635557,4.8886632)
-            },
-            {
-              title: "Eat at Jo's",
-              position: new google.maps.LatLng(52.3647485,4.8810125)
-            },
-            {
-              title: "Brouwerij Troost",
-              position: new google.maps.LatLng(52.3505276,4.8910133)
-            },
-            {
-              title: "de Biertuin",
-              position: new google.maps.LatLng(52.362325,4.9242439)
-            }
-          ]
+                title: "Hannekes Boom",
+                position: new google.maps.LatLng(52.3762837,4.9115914)
+              },
+              {
+                title: "Blue 360",
+                position: new google.maps.LatLng(52.3674258,4.8923548)
+              },
+              {
+                title: "Gartine",
+                position: new google.maps.LatLng(52.369185,4.8915167)
+              },
+              {
+                title: "Toastable",
+                position: new google.maps.LatLng(52.3673553,4.8903123)
+              },
+              {
+                title: "Single 404",
+                position: new google.maps.LatLng(52.368915,4.8874492)
+              },
+              {
+                title: "Greenwoods Tea Room",
+                position: new google.maps.LatLng(52.3757997,4.8912983)
+              },
+              {
+                title: "PIQNIQ",
+                position: new google.maps.LatLng(52.380322,4.886121)
+              },
+              {
+                title: "Omelegg",
+                position: new google.maps.LatLng(52.3517203,4.8915746)
+              },
+              {
+                title: "Bar Bukowski",
+                position: new google.maps.LatLng(52.3580076,4.9176572)
+              }
+            ],
+            image: ''
+          },
+          breweries: {
+            places: [
+              {
+                title: "Brouwerij 't IJ",
+                position: new google.maps.LatLng(52.3666947,4.9263624)
+              },
+              {
+                title: "Brouwerij de Prael",
+                position: new google.maps.LatLng(52.3756613,4.899332)
+              },
+              {
+                title: "Oedipus Brewing",
+                position: new google.maps.LatLng(52.3808556,4.889881)
+              }
+            ],
+            image: ''
+          },
+          bars: {
+            places: [
+              {
+                title: "Bierfabriek",
+                position: new google.maps.LatLng(52.3705196,4.8931189)
+              },
+              {
+                title: "In De Wildeman",
+                position: new google.maps.LatLng(52.3761526,4.895069)
+              },
+              {
+                title: "Delirium Café",
+                position: new google.maps.LatLng(52.3775658,4.9126965)
+              },
+              {
+                title: "Beertemple",
+                position: new google.maps.LatLng(52.3719824,4.8903467)
+              },
+              {
+                title: "Proeflokaal Arendsnest",
+                position: new google.maps.LatLng(52.3767249,4.8892992)
+              },
+              {
+                title: "Craft & Draft",
+                position: new google.maps.LatLng(52.3607929,4.8684218)
+              }
+            ],
+            image: ''
+          },
+          spirits: {
+            [
+              {
+                title: "Hiding in Plain Sight",
+                position: new google.maps.LatLng(52.3717482,4.9076649)
+              },
+              {
+                title: "La Cage Amsterdam",
+                position: new google.maps.LatLng(52.3662661,4.8914706)
+              },
+              {
+                title: "Whiskycafe L&B",
+                position: new google.maps.LatLng(52.362795,4.8852374)
+              },
+                {
+                title: "Wynand Fockink",
+                position: new google.maps.LatLng(52.3723226,4.895356)
+              }
+            ],
+            image: ''
+          }
+          hotel: {
+            [
+              {
+                title: "Hotel Arena",
+                position: new google.maps.LatLng(52.3612324,4.9163295)
+              }
+            ],
+            image: ''
+          },
+          dinner: {
+            [
+              {
+                title: "Bar Brouw",
+                position: new google.maps.LatLng(52.3573731,4.9183425)
+              },
+              {
+                title: "Hoppy Days",
+                position: new google.maps.LatLng(52.3774389,4.8936099)
+              },
+              {
+                title: "Lombardo's",
+                position: new google.maps.LatLng(52.3635557,4.8886632)
+              },
+              {
+                title: "Eat at Jo's",
+                position: new google.maps.LatLng(52.3647485,4.8810125)
+              },
+              {
+                title: "Brouwerij Troost",
+                position: new google.maps.LatLng(52.3505276,4.8910133)
+              },
+              {
+                title: "de Biertuin",
+                position: new google.maps.LatLng(52.362325,4.9242439)
+              }
+            ]
+            image: ''
+          }
         };
 
         drawMarkers(map, locations);
@@ -154,13 +172,17 @@
       var drawMarkers = function(map, locations) {
         for (var categoryName in locations) {
           var category = locations[categoryName];
+          
           if (locations.hasOwnProperty(categoryName)) {
-            for (var i = 0; i < category.length; i++) {
-              var location = category[i];
+            for (var i = 0; i < category.places.length; i++) {
+              
+              var location = category.places[i];
+
               location.marker = new google.maps.Marker({
                 position: location.position,
                 map: map,
-                title: location.title
+                title: location.title,
+                icon: category.image
               });
             } 
           }
