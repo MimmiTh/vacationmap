@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <style type="text/css">
       html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
     </style>
@@ -22,39 +23,130 @@
             places: [
               {
                 title: "Hannekes Boom",
-                position: new google.maps.LatLng(52.3762837,4.9115914)
+                position: new google.maps.LatLng(52.3762837,4.9115914),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Hannekes Boom</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Dijksgracht 4</i></p>'+
+                                '<p>Uteservering vid vattnet. Sallader, mackor, lättare rätter, hamburgare, vego, fisk- och skaldjur.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
+
               },
               {
                 title: "Blue 360",
-                position: new google.maps.LatLng(52.3674258,4.8923548)
+                position: new google.maps.LatLng(52.3674258,4.8923548),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Blue 360</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Kalverstraat 212-220</i></p>'+
+                                '<p>Utsikt. I ett shoppingcenter. Brunch, baguettes, toasts, blandad "vanlig lunch".</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Gartine",
-                position: new google.maps.LatLng(52.369185,4.8915167)
+                position: new google.maps.LatLng(52.369185,4.8915167),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Gartine</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Taksteeg 7</i></p>'+
+                                '<p>Frukost, brunch, mackor, soppor, lättare lunch.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Toastable",
-                position: new google.maps.LatLng(52.3673553,4.8903123)
+                position: new google.maps.LatLng(52.3673553,4.8903123),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Toastable</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Singel 441</i></p>'+
+                                '<p>Frukost, toasts, sallad.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
-                title: "Single 404",
-                position: new google.maps.LatLng(52.368915,4.8874492)
+                title: "Singel 404",
+                position: new google.maps.LatLng(52.368915,4.8874492),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Singel 404</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Singel 404</i></p>'+
+                                '<p>Matiga mackor.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Greenwoods Tea Room",
-                position: new google.maps.LatLng(52.3757997,4.8912983)
+                position: new google.maps.LatLng(52.3757997,4.8912983),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Greenwoods Tea Room</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Singel 103</i></p>'+
+                                '<p>Frukost, brunch, te.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "PIQNIQ",
-                position: new google.maps.LatLng(52.380322,4.886121)
+                position: new google.maps.LatLng(52.380322,4.886121),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">PIQNIQ</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Lindengracht 59</i></p>'+
+                                '<p>Frukost, brunch, mackor, bagels, sallad.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Omelegg",
-                position: new google.maps.LatLng(52.3517203,4.8915746)
+                position: new google.maps.LatLng(52.3517203,4.8915746),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Omelegg</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Ferdinand Bolstraat 143</i></p>'+
+                                '<p>Omelett.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Bar Bukowski",
-                position: new google.maps.LatLng(52.3580076,4.9176572)
+                position: new google.maps.LatLng(52.3580076,4.9176572),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Bar Bukowski</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Oosterpark 10</i></p>'+
+                                '<p>Blandad "vanlig lunch". Ägg, toast, sallad, burgare. Drinkar och öl på kvällen. Take away.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               }
             ],
             image: 'lunch.png'
@@ -63,15 +155,46 @@
             places: [
               {
                 title: "Brouwerij 't IJ",
-                position: new google.maps.LatLng(52.3666947,4.9263624)
+                position: new google.maps.LatLng(52.3666947,4.9263624),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Brouwerij t IJ</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Funenkade 7</i></p>'+
+                                '<p>Bryggeri vid kvarn. Rundtur 15:30 fre, lör sön. Behöver skriva upp sig i förväg samma dag.</p>'+
+                                '<p>Några öler: Natte (belgian Dubbel, mörk kryddig), Columbus (amber ale, humlig), Ijbok (mörk), Red bock.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Brouwerij de Prael",
-                position: new google.maps.LatLng(52.3756613,4.899332)
+                position: new google.maps.LatLng(52.3756613,4.899332),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Brouwerij de Prael</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Oudezijds Voorburgwal 30</i></p>'+
+                                '<p>Bryggeri. Rundtur fredag varje timme mellan 13:00 & 18:00, lördag mellan 13:00 & 17:00, söndag mellan 14:00 och 17:00. Även ölprovning.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Oedipus Brewing",
-                position: new google.maps.LatLng(52.3808556,4.889881)
+                position: new google.maps.LatLng(52.3833182,4.9204379),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Oedipus Brewing</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Gedempt Hamerkanaal 85</i></p>'+
+                                '<p>Bryggeri. Mest bar/tasting room.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               }
             ],
             image: 'brewery.png'
@@ -80,27 +203,101 @@
             places: [
               {
                 title: "Bierfabriek",
-                position: new google.maps.LatLng(52.3705196,4.8931189)
+                position: new google.maps.LatLng(52.3705196,4.8931189),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Bierfabriek</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Rokin 75</i></p>'+
+                                '<p>Serverar bara sin egenbryggda öl. Pur (pilsner), Rosso (red ale), Nero (porter). Tap tables. BBQ/Kyckling. Finger food. Take away.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "In De Wildeman",
-                position: new google.maps.LatLng(52.3761526,4.895069)
+                position: new google.maps.LatLng(52.3761526,4.895069),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Bierfabriek</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Kolksteeg 3</i></p>'+
+                                '<p>Stort blandat utbud. Topplistepub.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Delirium Café",
-                position: new google.maps.LatLng(52.3775658,4.9126965)
+                position: new google.maps.LatLng(52.3775658,4.9126965),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Delirium Café</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Piet Heinkade 4-6-8</i></p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
-                title: "Beertemple",
-                position: new google.maps.LatLng(52.3719824,4.8903467)
+                title: "BeerTemple",
+                position: new google.maps.LatLng(52.3719824,4.8903467),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">BeerTemple</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Nieuwezijds Voorburgwal 250</i></p>'+
+                                '<p>Mest amerikansk öl. Varierat och stort utbud. Dyrt i Amsterdam-mått.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Proeflokaal Arendsnest",
-                position: new google.maps.LatLng(52.3767249,4.8892992)
+                position: new google.maps.LatLng(52.3767249,4.8892992),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Proeflokaal Arendsnest</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Herengracht 90</i></p>'+
+                                '<p>Lokal öl. Stort utbud.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Craft & Draft",
-                position: new google.maps.LatLng(52.3607929,4.8684218)
+                position: new google.maps.LatLng(52.3607929,4.8684218),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Craft & Draft</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Overtoom 417</i></p>'+
+                                '<p>Stort utbud. Både bar och shop.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
+
+              },
+              {
+                title: "Café Gollem",
+                position: new google.maps.LatLng(52.3702215,4.88868),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Café Gollem</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Raamsteeg 4</i></p>'+
+                                '<p>Mycket belgiskt. Stort utbud.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               }
             ],
             image: 'bar.png'
@@ -109,19 +306,58 @@
             places: [
               {
                 title: "Hiding in Plain Sight",
-                position: new google.maps.LatLng(52.3717482,4.9076649)
+                position: new google.maps.LatLng(52.3717482,4.9076649),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Hiding in Plain Sight</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Rapenburg 18</i></p>'+
+                                '<p>Dedikerad coktailbar. Lite hemlig retro hipsterlyxkänsla.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "La Cage Amsterdam",
-                position: new google.maps.LatLng(52.3662661,4.8914706)
+                position: new google.maps.LatLng(52.3662661,4.8914706),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">La Cage Amsterdam</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Reguliersdwarsstraat 44 </i></p>'+
+                                '<p>Drinkar, restaurang. Lobster, entrecote, surf & turf. Lite finare.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Whiskycafe L&B",
-                position: new google.maps.LatLng(52.362795,4.8852374)
+                position: new google.maps.LatLng(52.362795,4.8852374),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Whiskycafe L&B</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Korte Leidsedwarsstraat 82-84</i></p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
                 {
                 title: "Wynand Fockink",
-                position: new google.maps.LatLng(52.3723226,4.895356)
+                position: new google.maps.LatLng(52.3723226,4.895356),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Wynand Fockink</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Pijlsteeg 31</i></p>'+
+                                '<p>Destilleri. Framför allt geneve - föregångare till gin. 1h provning med onlineregistrering. Lördag och söndag. 15:00, 16:30, 18:00 & 19:30.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               }
             ],
             image: 'spirit.png'
@@ -130,7 +366,17 @@
             places: [
               {
                 title: "Hotel Arena",
-                position: new google.maps.LatLng(52.3612324,4.9163295)
+                position: new google.maps.LatLng(52.3612324,4.9163295),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Hotel Arena</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>s-Gravesandestraat 51</i></p>'+
+                                '<p>Hä bo vi</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               }
             ],
             image: 'hotel.png'
@@ -138,35 +384,124 @@
           dinner: {
             places: [
               {
-                title: "Bar Brouw",
-                position: new google.maps.LatLng(52.3573731,4.9183425)
+                title: "Bar Brouw Oost",
+                position: new google.maps.LatLng(52.3573731,4.9183425),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Bar Brouw Oost</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Beukenplein 17</i></p>'+
+                                '<p>Smoked meat and craft beer. Burgare, ribs, brisket. Har lunch också (om man vill äta ordentligt, gissar jag). Goda betyg.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Hoppy Days",
-                position: new google.maps.LatLng(52.3774389,4.8936099)
+                position: new google.maps.LatLng(52.3774389,4.8936099),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Hoppy Days</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>1A Koggestraat</i></p>'+
+                                '<p>Gastropub. Inte jättestor meny. Hällefundra, rib-eye, pasta. Öl.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Lombardo's",
-                position: new google.maps.LatLng(52.3635557,4.8886632)
+                position: new google.maps.LatLng(52.3635557,4.8886632),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Lombardos</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Nieuwe Spiegelstraat 50</i></p>'+
+                                '<p>Riktigt bra burgare. Öl. Litet, nog bäst för take away.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Eat at Jo's",
-                position: new google.maps.LatLng(52.3647485,4.8810125)
+                position: new google.maps.LatLng(52.3647485,4.8810125),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Eat at Jos</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Marnixstraat 409</i></p>'+
+                                '<p>Lunch/middag. Blandad, rätt vanlig mat. Bra priser. Menyn ändras dagligen.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "Brouwerij Troost",
-                position: new google.maps.LatLng(52.3505276,4.8910133)
+                position: new google.maps.LatLng(52.3505276,4.8910133),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">Brouwerij Troost</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Cornelis Troostplein 21</i></p>'+
+                                '<p>Olika egenbryggda öl, ca 8 st. Burgers, steaks, salads, soups.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
               },
               {
                 title: "de Biertuin",
-                position: new google.maps.LatLng(52.362325,4.9242439)
-              }
-            ],
-            image: 'dinner.png'
-          }
-        };
+                position: new google.maps.LatLng(52.362325,4.9242439),
+                info: new google.maps.InfoWindow({
+                    content: '<div class="content">'+
+                              '<h1 class="firstHeading" class="firstHeading">de Biertuin</h1>'+
+                              '<div class="bodyContent">'+
+                                '<p><i>Linnaeusstraat 29</i></p>'+
+                                '<p>Lunch och middag. Sallad, mackor, olika burgare, fish n chips. Stort ölutbud. Uteservering.</p>'+
+                              '</div>'+
+                            '</div>',
+                    maxWidth: 200
+                })
+              },
+              {
+                title: "Smokin' Barrels",
+                  position: new google.maps.LatLng(52.3568753,4.9177529),
+                  info: new google.maps.InfoWindow({
+                      content: '<div class="content">'+
+                                '<h1 class="firstHeading" class="firstHeading">Smokin Barrels</h1>'+
+                                '<div class="bodyContent">'+
+                                  '<p><i>Beukenplein 22</i></p>'+
+                                  '<p>Brunch lör & sön. Middag. Take away. Brunch: Ägg, sallad, mackor, lobster, burgare. Middag: Burgare, lobster, surf & turf, kött och kyckling.</p>'+
+                                '</div>'+
+                              '</div>',
+                      maxWidth: 200
+                  })
+                }
+              ],
+              image: 'dinner.png'
+            }
+          };
 
         drawMarkers(map, locations);
+      };
+
+      var createMarker = function(map, latlng, title, icon, infoWindow) {
+        var marker = new google.maps.Marker({
+          position: latlng,
+          map: map,
+          title: title,
+          icon: icon
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infoWindow.open(map, marker);
+        });
+
+        return marker;
       };
 
       var drawMarkers = function(map, locations) {
@@ -175,15 +510,8 @@
           
           if (locations.hasOwnProperty(categoryName)) {
             for (var i = 0; i < category.places.length; i++) {
-              
               var location = category.places[i];
-
-              location.marker = new google.maps.Marker({
-                position: location.position,
-                map: map,
-                title: location.title,
-                icon: category.image
-              });
+              location.marker = createMarker(map, location.position, location.title, category.image, location.info);
             } 
           }
         }
